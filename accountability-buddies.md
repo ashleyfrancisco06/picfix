@@ -1,7 +1,7 @@
 # Accountabilibuddies!
 
 | | | |
-|--------|-----------|
+|--------|-----------|-
 | Jesica | Yaakov    |
 | Joel   | Eryl      |
 | Sean   | Jae       |
