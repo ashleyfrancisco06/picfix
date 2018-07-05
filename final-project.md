@@ -26,7 +26,7 @@ Make sure you review your project proposal with your instructor so you can make 
 
 ## Proposals
 
-We will be accepting proposals any time between now and Tuesday, 9/12.
+We will be accepting proposals any time between now and Tuesday, 7/10.
 
 Your proposals must include:
 - The name of your app.
@@ -41,13 +41,13 @@ Your proposals must include:
 
 ### Timeline 
 
-- **12/07 - 12/12**: Work on your proposals! As soon as you have a proposal prepared, you can present it to your squad leader. Keep in mind the things we have coming next week -- Rails CRUD, Rails with React, Rails auth, more Rails reps -- and don't decide what your tech stack is going to include too soon. 
-- **12/12 - 12/19**: Project worktime! You'll have time to work on your project for the last week of class.
-- **12/20**: SCIENCE FAIR AND GRADUATION!!!!!!! YOU MADE IT!!! YAY!!!
+- **7/6 - 7/10**: Work on your proposals! As soon as you have a proposal prepared, you can present it to your squad leader. Keep in mind the things we have coming next week -- Rails CRUD, Rails with React, Rails auth, more Rails reps -- and don't decide what your tech stack is going to include too soon. 
+- **7/10 - 7/16**: Project worktime! You'll have time to work on your project for the last week of class.
+- **7/17**: SCIENCE FAIR AND GRADUATION!!!!!!! YOU MADE IT!!! YAY!!!
 
 ### What if I Have a Dream That Doesn't Fulfill the Requirements?
 
-If you have an idea that might not fulfill the above requirements, that's ok.  This is your project and you should feel like you have absolute ownership over it.  However, if you deviate from the requirements (which are really really lax btw) you will be required to have a "Shark Tank" style meeting with all of the instructors at the same time with a detailed proposal.  Your proposal should cover all the requirements of a normal proposal, but you should also be prepared to explain:
+If you have an idea that might not fulfill the above requirements, that's ok.  This is your project and you should feel like you have absolute ownership over it.  However, if you deviate from the requirements you will be required to have a "Shark Tank" style meeting with all of the instructors at the same time with a detailed proposal.  Your proposal should cover all the requirements of a normal proposal, but you should also be prepared to explain:
 
 * **Why is your project better for your portfolio than the current specs?**
 * **If you are not using React** demonstrate to us that you are already an React expert and doing a final project in React would be extraneous.
