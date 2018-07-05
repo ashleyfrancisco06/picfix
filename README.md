@@ -1,4 +1,4 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Your Portfolio of Apps
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Final Project Guidelines
 
 At the end of this unit, you are expected to deliver three applications (each in their own github repo):
   * Personal Portfolio Website (this is due a week after the course ends)
@@ -7,15 +7,14 @@ At the end of this unit, you are expected to deliver three applications (each in
 
 See below for more details!
 
-### Required Applications:
+### Presentation Guidelines:
 
-- **Rails CRUD Application** with at least 2 tables in your database. (**due on 12/12/2017**) (Submit this via issue ticket on this repo!)
+Project 4 presentations will start at 9:00 AM on July 17th. Each presentation should be 8 minutes or less and cover the following:
 
-- **Personal Portfolio Website**, which must include:
-  * 4-5 Completed Projects with links to the github/deployed version
-  * Be under a professional domain name
-  * Mobile First Design
-  * Clean Commented Code
+- What was your motivation to build this project?
+- Demo of your project's core functionality.
+- What is one feature you're particularly proud of? (show code)
+- Shout-outs for your fellow classmates!
 
 - **Final Project**: See [this readme](./final-project.md) for more details!!
 
