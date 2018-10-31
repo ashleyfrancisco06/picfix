@@ -41,9 +41,10 @@ Your proposals must include:
 
 ### Timeline 
 
-- **7/6 - 7/10**: Work on your proposals! As soon as you have a proposal prepared, you can present it to your squad leader. Keep in mind the things we have coming next week -- Rails CRUD, Rails with React, Rails auth, more Rails reps -- and don't decide what your tech stack is going to include too soon. 
-- **7/10 - 7/16**: Project worktime! You'll have time to work on your project for the last week of class.
-- **7/17**: SCIENCE FAIR AND GRADUATION!!!!!!! YOU MADE IT!!! YAY!!!
+- **10/31 - 11/1**: Work on your proposals! As soon as you have a proposal prepared, you can present it to your squad leader. Keep in mind the things we have coming next week -- Rails CRUD, Rails with React, Rails auth, more Rails reps -- and don't decide what your tech stack is going to include too soon. 
+- **11/1 - 11/8**: Project worktime! You'll have time to work on your project for the last week of class.
+- **11/9**: Unit Four Science Fair _(Concourse)_
+- **11/13**: 🎓🎓Graduation🎓🎓 You've made it!
 
 ### What if I Have a Dream That Doesn't Fulfill the Requirements?
 
