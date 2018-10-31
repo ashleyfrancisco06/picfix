@@ -6,6 +6,8 @@
 
 - [Overview](#overview): What is this project?
 - [Technical Requirements](#technical-requirements): What technologies will you be using?
+- [Planning & Deliverables](#planning--deliverables): What will we be presenting?
+- [Project Timeline](#project-timeline)
 - [About Plagiarism](#about-plagiarism): How do we keep ourselves honest?
 
 
@@ -42,7 +44,7 @@ Make sure you review your project proposal with your instructor so you can make 
 
 ### Project Planning Deliverables
 
-#### Your team must review the following with your instructional team BEFORE you start to code.
+#### You must review the following with your instructional team BEFORE you start to code.
 
 Your proposals must include:
 
@@ -69,12 +71,18 @@ Your proposals must include:
 
 ---
 
-### Timeline 
+## Project Timeline 
 
-- **10/31 - 11/1**: Work on your proposals! As soon as you have a proposal prepared, you can present it to your squad leader. Keep in mind the things we have coming next week -- Rails CRUD, Rails with React, Rails auth, more Rails reps -- and don't decide what your tech stack is going to include too soon. 
-- **11/1 - 11/8**: Project worktime! You'll have time to work on your project for the last week of class.
-- **11/9**: Unit Four Science Fair _(Concourse)_
-- **11/13**: 🎓🎓Graduation🎓🎓 You've made it!
+###### When is it due?
+
+| Date            | Action                                                                                                          |
+|:-----------------:|-----------------------------------------------------------------------------------------------------------------|
+| **10/30**    | Start thinking of ideas for your final project               |
+| **11/1**   | **PROJECT PROPOSALS!** Please have wireframes, user stories, ERDs, additional requirements you will tackle, and a project timeline for us to review.           |                                                   |
+| **11/1-11/8**     | Project worktime! You'll have time to work on your project for the last week of class.                                                                                              |
+| **11/9**          | Unit Four Science Fair _(Concourse)_               |
+| **11/13**         | 🎓🎓Graduation🎓🎓                 |
+---
 
 ### What if I Have a Dream That Doesn't Fulfill the Requirements?
 
@@ -84,33 +92,28 @@ If you have an idea that might not fulfill the above requirements, that's ok.  T
 * **If you are not using React** demonstrate to us that you are already an React expert and doing a final project in React would be extraneous.
 * **That your idea is really cool and indisputably impressive.**
 
+---
+
+## Asking for Help
+In a push for developer independence and self-reliance, we are going to adhere to [these rules](./asking-for-help.md) for receiving help during project week.
+
+**You are going to encounter a ton of unexpected errors and problems.**
+
+Expect to come up against a lot of what can **seem** like roadblocks. Push forward and through; these are amazing learning opportunities. A lot of students treat errors during projects as just getting in the way of "finishing". The point of this project is **not** to finish everything; the point is to integrate your knowledge and deepen your understanding of how to put apps together.
+
+Errors provide the most valuable source of information about gaps in our understanding. Seeing an error as "it's not working" and randomly changing code until "it works" will make everything worse. Spending time thoughtfully debugging issues is a fantastic investment that will lead to greater mastery and understanding.
+
+**Pro-Tip** - 'Failure is a temporary state.'
 
 ---
 
-## Necessary Deliverables
-
-* A **working front-end**, hosted somewhere on the internet
-* A **link to your hosted working app** in the URL section of your GitHub repo
-* A **git repository hosted on GitHub**, with a link to your hosted project, and frequent commits dating back to the very beginning of the project
-* **A ``readme.md`` file** with:
-    * An embedded screenshot of the app
-    * Explanations of the **technologies** used
-    * A couple paragraphs about the **general approach you took**
-    * **Installation instructions** for any dependencies
-    * Link to your **user stories** – who are your users, what do they want, and why?
-    * Link to your **wireframes** – sketches of major views / interfaces in your application
-    * Descriptions of any **unsolved problems** or **major hurdles** you had to overcome
-
----
-
-## Suggested Ways to Get Started
+## Suggested Ways to Start
 
 * **Don’t get too caught up in too many awesome features** – simple is always better. Build something impressive that does one thing well.
 * **Design first.** Planning with user stories & wireframes before writing code means you won't get distracted changing your mind – you'll know what to build, and you can spend your time wisely by just building it.
 * **Don’t hesitate to write throwaway code** to solve short term problems.
-* **Read the docs for whatever technologies / frameworks / API’s you use**.
+* **Read the documentation for whatever technologies / frameworks / API’s you use**.
 * **Write your code DRY** and **build your APIs RESTful**.
-* **Be consistent with your code style.** You're working in teams, but you're only making one app per team. Make sure it looks like a unified effort.
 * **Commit early, commit often.** Don’t be afraid to break something because you can always go back in time to a previous version.
 * **Keep user stories small and well-defined**, and remember – user stories focus on what a user needs, not what development tasks need accomplishing.
 * **Write code another developer wouldn't have to ask you about**. Do your naming conventions make sense? Would another developer be able to look at your app and understand what everything is?
@@ -118,18 +121,26 @@ If you have an idea that might not fulfill the above requirements, that's ok.  T
 * **Comment your code.** Will someone understand what is going on in each block or function? Even if it's obvious, explaining the what & why means someone else can pick it up and get it.
 * **Write pseudocode before you write actual code.** Thinking through the logic of something helps.
 
+___
+
+## Process
+
+**Do not** immediately jump into coding.  For your thesis project you want to carefully plan your approach. You **must** use the provided GitHub Project [template](https://git.generalassemb.ly/layne/project-2/projects).
+
+- Database: Draw out the tables and columns you plan to use in your database (ERDs - Entity Relationship Diagram)
+- Wireframes: Detail the flow of your app through simple wireframes
+  * You can choose whether you want to whiteboard the wireframes, use some program or just sketch it out with pencil and paper.
+- Routes: Design the HTTP route architecture of your application using  [RESTful conventions](https://en.wikipedia.org/wiki/Representational_state_transfer#Applied_to_Web_services)
+
+- Set up a separate GitHub repository __(NOT this one)__ and **project board** (use the template provided) for your project
+- Schema & Seeds: When you are confident with your ERD, define its tables in SQL and put into a schema file. For easier testing, write a seed file as well to insert sample data to your database.
+- Models: Write a model with methods that perform CRUD on the database.
+
 ---
 
-## Resources
-
-* **[HackDesign](https://hackdesign.org/lessons)** _(beginner's reference for thinking like a designer)_
-* **[Visual Design Hacking](https://generalassemb.ly/online/videos/visual-design-hacking)** _(a great tips-and-tricks focused video from Front Row)_
-* **[Web Design For Non-designers](https://generalassemb.ly/online/videos/web-design-for-non-designers)** _(another great design-related course for all the nerds out there)_
-
-___
 ## Random Fun Things You Could Check Out (Definitely not required):
-* React Native - Use React to build a phone app!
-* Electron - Use JS to build a native application
+* Mapbox - Use React to build a phone app!
+* Websockets - Use JS to build a native application
 * Raspberry Pi - Use JS to build a robot/IoT project
 * D3 - Build beautiful graphs and visual experiences for data.
 
@@ -147,6 +158,20 @@ ___
 
 ---
 
+## Submission
+
+###### How do we turn in the project?
+
+* As you make code changes, **frequently commit and push to GitHub Enterprise**. Then, create an issue ticket on this repository where the title includes your name and the name of your application.
+
+In the body of the ticket include:
+
+1. Link to your deployed app
+2. Link to the project GitHub repo 
+3. Wins, struggles, comments, etc...
+
+---
+
 ## About Plagiarism
 
 Plagiarism is a serious offense and grounds for expulsion. Our entire policy can be found [in the wiki](https://github.com/ga-students/wdi-nyc-purple-rain-students/wiki/General-Assembly-Plagiarism-Policy).
@@ -154,6 +179,7 @@ Plagiarism is a serious offense and grounds for expulsion. Our entire policy can
 You are encouraged to ask others, including students, instructors, and stackoverflow, for help. However, it is NOT ACCEPTABLE TO COPY another person's code and submit it as your own. More importantly, it is detrimental to your learning and growth.
 
 All of the following are considered plagiarism or cheating:
+
 * Turning in work that is not your own.
 * Turning in someone else's work as your own.
 * Hiring, or paying someone to do your work for you.
@@ -165,6 +191,7 @@ All of the following are considered plagiarism or cheating:
 * Failing to put a quotation in quotation marks.
 
 In an effort to not plagiarize, credit for this content goes to:
+
 * [Plagiarism.org](http://plagiarism.org/), specifically the “plagiarism 101” section.  Content was adapted for code.  For more information, please see:
   * [What is Plagiarism](http://www.plagiarism.org/plagiarism-101/what-is-plagiarism)
   * [Types of Plagiarism](http://www.plagiarism.org/plagiarism-101/types-of-plagiarism)
