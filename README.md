@@ -1,8 +1,8 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project 4 Guidelines
 
-At the end of Unit 4, you are expected to deliver:
+![Final Countdown](https://media.giphy.com/media/C0NhnyKT89QdO/giphy.gif)
 
-  * A **Final Project**, with the tech stack of your choosing
+At the end of Unit 4, you are expected to deliver a **FINAL PROJECT** with the tech stack of your choosing.
 
 ### Presentation Guidelines:
 
@@ -11,6 +11,5 @@ Project 4 presentations will start at 9:00 AM on November 9th. Each presentation
 - What was your motivation to build this project?
 - Demo of your project's core functionality.
 - What is one feature you're particularly proud of? (show code)
-- Shout-outs for your fellow classmates!
 
-- **Final Project**: See [this readme](./final-project.md) for more details!!
+See the [final project readme](./final-project.md) for more details!!
