@@ -84,13 +84,9 @@ Your proposals must include:
 | **11/13**         | 🎓🎓Graduation🎓🎓                 |
 ---
 
-### What if I Have a Dream That Doesn't Fulfill the Requirements?
+### What if I don't know what I want to build?
 
-If you have an idea that might not fulfill the above requirements, that's ok.  This is your project and you should feel like you have absolute ownership over it.  However, if you deviate from the requirements you will be required to have a "Shark Tank" style meeting with all of the instructors at the same time with a detailed proposal.  Your proposal should cover all the requirements of a normal proposal, but you should also be prepared to explain:
-
-* **Why is your project better for your portfolio than the current specs?**
-* **If you are not using React** demonstrate to us that you are already an React expert and doing a final project in React would be extraneous.
-* **That your idea is really cool and indisputably impressive.**
+- Capstone Project
 
 ---
 
