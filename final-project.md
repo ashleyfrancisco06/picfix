@@ -1,4 +1,16 @@
-<h1 align="center">Project 4 - Your Thesis Project</h1>
+<h1 align="center">Project #4 - Thesis</h1>
+
+<p align="center"><strong>Read this entire document before writing a line of code.</strong></p>
+
+#### Table of Contents
+
+- [Overview](#overview): What is this project?
+- [Technical Requirements](#technical-requirements): What technologies will you be using?
+- [About Plagiarism](#about-plagiarism): How do we keep ourselves honest?
+
+
+
+---
 
 ## Overview
 
@@ -24,20 +36,38 @@ Make sure you review your project proposal with your instructor so you can make 
 
 ---
 
-## Proposals
+## Planning & Deliverables
 
-We will be accepting proposals any time between now and Tuesday, 7/10.
+###### What will we be turning in?
+
+### Project Planning Deliverables
+
+#### Your team must review the following with your instructional team BEFORE you start to code.
 
 Your proposals must include:
-- The name of your app.
-- What your MVP looks like.
-- What your reach goals are.
-- User stories that describe how your app will be used.
-- Wireframes!
-- What technologies you intend on using.
-- Your timeline
-- Foreseen challenges or obstacles.
-- A link to your repo! 
+
+* **Scope:** What are you planning to build? What is the name of your application. What technologies do you plan to use? What do you reasonably think you can implement in the allotted time period? What are your reach goals?
+* **User Stories:** Who is your user? What features will your app have? Set up your project schedule in [GitHub Project](https://git.generalassemb.ly/wdi-nyc-arcadia/project-4/projects). Write out your user stories in the README. Establish a timeline for completionn.
+* **Wireframes:** What does MVP look like? Sketch out what your core pages will look like and how they will work. Consider making a *paper prototype* to demonstrate and/or test key user interactions.
+* **Data Models:** Draw out the models and any associations for your project in an entity relationship diagram (ERDs).
+* **Milestones:** Outline the milestones/sprints in GitHub Project.
+
+### Completed Project Deliverables
+
+- A **working API**, hosted somewhere on the internet
+- A handmade front-end **that consumes your own API**, hosted somewhere on the internet
+- A **link to your hosted working app** in the URL section of your Github repo
+- A link to your **repository hosted on Github Enterprise**, with a link to your hosted project, and frequent commits dating back to the _very beginning_ of the project
+- **A `README.md` file** with:
+    - Explanations of the **technologies** used
+    - A couple of paragraphs about the **general approach you took**
+    - **Installation instructions** for any dependencies
+    - Link to your ERDs - Diagrams of your models and their relationships.
+    - Link to your **user stories** – who are your users, what do they want, and why?
+    - Link to your **wireframes** – sketches of views and interfaces in your application
+    - Descriptions of any **unsolved problems** or **hurdles** you had to overcome
+
+---
 
 ### Timeline 
 
@@ -117,7 +147,7 @@ ___
 
 ---
 
-## A Note on Plagiarism
+## About Plagiarism
 
 Plagiarism is a serious offense and grounds for expulsion. Our entire policy can be found [in the wiki](https://github.com/ga-students/wdi-nyc-purple-rain-students/wiki/General-Assembly-Plagiarism-Policy).
 
