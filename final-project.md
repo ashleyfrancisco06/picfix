@@ -4,6 +4,7 @@
 
 #### Table of Contents
 
+- [Science Fair](#science-fair): Science Fair
 - [Overview](#overview): What is this project?
 - [Technical Requirements](#technical-requirements): What technologies will you be using?
 - [Planning & Deliverables](#planning--deliverables): What will we be presenting?
@@ -13,6 +14,13 @@
 
 
 ---
+
+## Science Fair
+
+Project 4 science fair will start at 1:30pm on Monday, Nov 3rd. 
+
+See the [final project readme](./final-project.md) for more details!!
+
 
 ## Overview
 
