@@ -163,9 +163,9 @@ ___
 
 ###### How do we turn in the project?
 
-* As you make code changes, **frequently commit and push to GitHub Enterprise**. Then, create an issue ticket on this repository where the title includes your name and the name of your application.
+* Fork this repo. Create a Pull request on this repository where the title includes your name and the name of your application.
 
-In the body of the ticket include:
+In the body of the pull request include:
 
 1. Link to your deployed app
 2. Link to the project GitHub repo 
