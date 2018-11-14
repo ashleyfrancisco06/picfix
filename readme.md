@@ -19,9 +19,6 @@
 
 Project 4 science fair will start at 1:30pm on Monday, Nov 3rd. 
 
-See the [final project readme](./final-project.md) for more details!!
-
-
 ## Overview
 
 **You’ve come a long way, and it's time to show it.** This will be your most advanced project to date, and if you put creativity into it, it'll hopefully be the thing you want to show off most prominently in your portfolio.
