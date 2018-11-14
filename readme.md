@@ -1,4 +1,4 @@
-<h1 align="center">Project #4 - Thesis</h1>
+<h1 align="center">Project 4 Prompt</h1>
 
 <p align="center"><strong>Read this entire document before writing a line of code.</strong></p>
 
