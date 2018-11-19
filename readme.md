@@ -83,8 +83,8 @@ Your proposals must include:
 | Date            | Action                                                                                                          |
 |:-----------------:|-----------------------------------------------------------------------------------------------------------------|
 | **11/15**    | Start thinking of ideas for your final project               |
-| **11/21**   | **PROJECT PROPOSALS!** Please have wireframes, user stories, ERDs, additional requirements you will tackle, and a project timeline for us to review.           |                                                   |
-| **11/20-12/3**     | Project worktime! You'll have time to work on your project for the last week of class.                                                                                              |
+| **11/20**   | **PROJECT PROPOSALS!** Please have wireframes, user stories, ERDs, additional requirements you will tackle, and a project timeline for us to review.           |                                                   |
+| **11/21-12/3**     | Project worktime! You'll have time to work on your project for the last week of class.                                                                                              |
 | **12/3**          | Unit Four Science Fair _(Concourse)_               |
 | **12/5**         | 🎓🎓Graduation🎓🎓                 |
 ---
@@ -96,7 +96,6 @@ Your proposals must include:
 ---
 
 ## Asking for Help
-In a push for developer independence and self-reliance, we are going to adhere to [these rules](./asking-for-help.md) for receiving help during project week.
 
 **You are going to encounter a ton of unexpected errors and problems.**
 
