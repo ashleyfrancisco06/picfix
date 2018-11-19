@@ -17,7 +17,7 @@
 
 ## Science Fair
 
-Project 4 science fair will start at 1:30pm on Monday, Nov 3rd. 
+Project 4 science fair will start at 1:30pm on Monday, Dec 3rd. 
 
 ## Overview
 
