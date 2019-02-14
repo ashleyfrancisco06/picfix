@@ -17,7 +17,7 @@
 
 ## Science Fair
 
-Project 4 science fair will start at 1:30pm on Monday, Dec 3rd. 
+Project 4 science fair will start at 10:00am on Wednesday, March 6th. 
 
 ## Overview
 
@@ -82,11 +82,11 @@ Your proposals must include:
 
 | Date            | Action                                                                                                          |
 |:-----------------:|-----------------------------------------------------------------------------------------------------------------|
-| **11/15**    | Start thinking of ideas for your final project               |
-| **11/20**   | **PROJECT PROPOSALS!** Please have wireframes, user stories, ERDs, additional requirements you will tackle, and a project timeline for us to review.           |                                                   |
-| **11/21-12/3**     | Project worktime! You'll have time to work on your project for the last week of class.                                                                                              |
-| **12/3**          | Unit Four Science Fair _(Concourse)_               |
-| **12/5**         | 🎓🎓Graduation🎓🎓                 |
+| **2/27**    | Start thinking of ideas for your final project               |
+| **2/28**   | **PROJECT PROPOSALS!** Please have wireframes, user stories, ERDs, additional requirements you will tackle, and a project timeline for us to review.           |                                                   |
+| **2/28-3/5**     | Project worktime! You'll have time to work on your project for the last week of class.                                                                                              |
+| **3/6**          | Unit Four Science Fair _(Concourse)_               |
+| **3/8**         | 🎓🎓Graduation🎓🎓                 |
 ---
 
 ### What if I don't know what I want to build?
@@ -162,13 +162,12 @@ ___
 
 ###### How do we turn in the project?
 
-* Fork this repo. Create a Pull request on this repository where the title includes your name and the name of your application.
+* A Google Form will be provided to submit your project.
 
-In the body of the pull request include:
+You will need to include:
 
 1. Link to your deployed app
 2. Link to the project GitHub repo 
-3. Wins, struggles, comments, etc...
 
 ---
 
