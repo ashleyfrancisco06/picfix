@@ -82,8 +82,8 @@ Your proposals must include:
 
 | Date            | Action                                                                                                          |
 |:-----------------:|-----------------------------------------------------------------------------------------------------------------|
-| **2/27**    | Start thinking of ideas for your final project               |
-| **2/28**   | **PROJECT PROPOSALS!** Please have wireframes, user stories, ERDs, additional requirements you will tackle, and a project timeline for us to review.           |                                                   |
+| **2/26**    | Start thinking of ideas for your final project               |
+| **2/27**   | **PROJECT PROPOSALS!** Please have wireframes, user stories, ERDs, additional requirements you will tackle, and a project timeline for us to review.           |                                                   |
 | **2/28-3/5**     | Project worktime! You'll have time to work on your project for the last week of class.                                                                                              |
 | **3/6**          | Unit Four Science Fair _(Concourse)_               |
 | **3/8**         | 🎓🎓Graduation🎓🎓                 |
