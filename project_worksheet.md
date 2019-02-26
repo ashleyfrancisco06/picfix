@@ -61,13 +61,14 @@ https://res.cloudinary.com/ashleyfrancisco/image/upload/v1551196229/Finish.jpg
 - Save to phone/ Share to Social Media
 - Add photo to Album
 - Permissions to access camera, photos library, other apps (Social media) 
-- Google API for user sign in/ create account 
+
 
 #### PostMVP 
 
 - Add Additional Features ( Exposure, contrast, lux, saturation, highlights, etc)
 - Add (in Contact Us) a link to open email of user to send email.
 - Desktop view
+- Google API for user sign in/ create account 
 
 ## Architectural Design
 
@@ -82,21 +83,33 @@ https://res.cloudinary.com/ashleyfrancisco/image/upload/v1551196229/Finish.jpg
 
 Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components. 
 
-#### SAMPLE.....
 | Component | Description | 
 | --- | :---: |  
-| Header | This will render the header include the nav | 
-| Footer | This will render the header include the nav | 
+| Library | This will render the bottom user photo, bottom nav (camera, edit, and albums) and all the photos a user has edited | 
+| Edit | This will render the photo being edited, the feature toolbar on the bottom ( Resize, Filter, and Text)  and a button to finish the editing| 
+| Home | Toggle between Login and Sign up |
 
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
 
-#### SAMPLE.....
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs |
-| Total | H | 6hrs| 5hrs | 
+| Login/Sign Up Front End | L | 4hrs| 0rs |
+| Google API | L | 6hrs| 0hrs |
+| Get User Photos | H | 6hrs | 0hrs |
+| Get User Profile | H | 6hrs | 0hrs|
+| Update User Profile| L | 4hrs | 0hrs |
+| Delete User Profile| L |  4hrs | 0hrs |
+| Create User | L | 3hrs| 0hrs |
+| Authentication| L |  5hrs | 0hrs |
+| Edit Photo Screen | H | 6hrs | 0hrs |
+| Resize image feature | H | 5hrs | 0hrs |
+| Add Filter to image feature | H | 5hrs | 0hrs |
+| Add text to image feature | H | 5hrs | 0hrs |
+| Create Albums | H |  5hrs | 0hrs |
+| Permissions to access camera and library | H | 2hrs | 0hrs |
+
+| Total | / | 62hrs| 0hrs | 
 
 ## Helper Functions
 Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
@@ -109,22 +122,15 @@ Helper functions should be generic enought that they can be reused in other appl
 ## Additional Libraries
 | Library | What it does |
 | --- | :---: |
- | Google API | allows user to create account with their google account|
- | Camera Roll API | allows access to camera |
- | react-native-image-marker package| add an image/ logo to image|
- | react-native-fetch-blob package| allows user to fetch(grab) image(blob)|
- | react-native-image-resizer package | resize image in app |
- | react-native-image-filter-kit package | add filter to image in app |
- | react-native-image-picker package | pick an image in app|
- | @merryjs/photo-viewer | view the image ( edit screen) |
- | Expo | |
- 
- #### SAMPLE.....
-| Library | What it Does | 
-| --- | :---: |  
-| Bootstrap | Used to help style my application | 
-| Giphy API | Used to get gifs to use | 
-
+| Google API | allows user to create account with their google account|
+| Camera Roll API | allows access to photo library |
+| react-native-image-marker package| add an image/ logo to image|
+| react-native-fetch-blob package| allows user to fetch(grab) image(blob)|
+| react-native-image-resizer package | resize image in app |
+| react-native-image-filter-kit package | add filter to image in app |
+| react-native-image-picker package | pick an image in app|
+| @merryjs/photo-viewer | view the image ( edit screen) |
+| CameraKit API | Access ios camera |
 
 ## Code Snippet
 
