@@ -51,8 +51,7 @@ https://res.cloudinary.com/ashleyfrancisco/image/upload/v1551196229/Finish.jpg
 
 ## Priority Matrix
 
-https://res.cloudinary.com/ashleyfrancisco/image/upload/v1551198304/Priority_Matrix.jpg
-
+![Priority matrix](https://res.cloudinary.com/ashleyfrancisco/image/upload/v1551199311/Priority_Matrix.jpg)
 ### MVP/PostMVP
 
 #### MVP 
