@@ -55,12 +55,12 @@ https://res.cloudinary.com/ashleyfrancisco/image/upload/v1551196229/Finish.jpg
 ### MVP/PostMVP
 
 #### MVP 
-- User Authentication (Login, Sign Up)
 - Edit a photo with three main features:  Filter, Resize, and Text 
 - take photo in App
 - Save to phone/ Share to Social Media
 - Add photo to Album
 - Permissions to access camera, photos library, other apps (Social media) 
+- User Authentication (Login, Sign Up)
 
 
 #### PostMVP 
@@ -68,7 +68,7 @@ https://res.cloudinary.com/ashleyfrancisco/image/upload/v1551196229/Finish.jpg
 - Add Additional Features ( Exposure, contrast, lux, saturation, highlights, etc)
 - Add (in Contact Us) a link to open email of user to send email.
 - Desktop view
-- Google API for user sign in/ create account 
+- Google API for user auth
 
 ## Architectural Design
 
@@ -77,7 +77,7 @@ https://res.cloudinary.com/ashleyfrancisco/image/upload/v1551196229/Finish.jpg
 
 ## ERD
 
-![ERD](https://res.cloudinary.com/ashleyfrancisco/image/upload/v1551196229/ERD.jpg)
+![ERD](https://res.cloudinary.com/ashleyfrancisco/image/upload/v1551212776/ERD.jpg)
 
 ## UI Components
 
@@ -96,27 +96,39 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | --- | :---: |  :---: | :---: |
 | Login/Sign Up Front End | L | 4hrs| 0rs |
 | Google API | L | 6hrs| 0hrs |
-| Get User Photos | H | 6hrs | 0hrs |
-| Get User Profile | H | 6hrs | 0hrs|
-| Update User Profile| L | 4hrs | 0hrs |
-| Delete User Profile| L |  4hrs | 0hrs |
-| Create User | L | 3hrs| 0hrs |
-| Authentication| L |  5hrs | 0hrs |
+| User Model | H | 6hrs | 0hrs |
+| Album Model | H | 6hrs | 0hrs|
+| Photo Model | H | 6hrs | 0hrs |
+| Authentication| L |  6hrs | 0hrs |
 | Edit Photo Screen | H | 6hrs | 0hrs |
-| Resize image feature | H | 5hrs | 0hrs |
-| Add Filter to image feature | H | 5hrs | 0hrs |
-| Add text to image feature | H | 5hrs | 0hrs |
-| Create Albums | H |  5hrs | 0hrs |
+| Resize image feature | H | 6hrs | 0hrs |
+| Add Filter to image feature | H | 6hrs | 0hrs |
+| Add text to image feature | H | 6hrs | 0hrs |
+| Create Albums | H |  6hrs | 0hrs |
 | Permissions to access camera and library | H | 2hrs | 0hrs |
 | Total | / | 62hrs| 0hrs | 
 
 ## Helper Functions
-Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
 
-#### SAMPLE.....
 | Function | Description | 
 | --- | :---: |  
-| Capitalize | This will capitalize the first letter in a string of text | 
+| Sign in | this allows user to sign in | 
+| Sign Out | this allows user to sign out |
+| ComponentDidMount | render functions on page automatically | 
+| Create User | allows a user to be created |
+| Edit user | allows user info to be updated |
+| Delete User | Allows user to be deleted| 
+| New Photo | Allows new photo to be edited |
+| Save photo| allows photo to be saved on to local library |
+| addToAlbum | allows user to add a photo to existing album |
+| createAlbum | allows a new album to be created |
+| Delete Album | allows for an album to be deleted| 
+| Edit album | allows for an album to be edited |
+
+
+
+
+
 
 ## Additional Libraries
 | Library | What it does |
