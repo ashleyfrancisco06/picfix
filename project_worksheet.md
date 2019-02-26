@@ -108,7 +108,6 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Add text to image feature | H | 5hrs | 0hrs |
 | Create Albums | H |  5hrs | 0hrs |
 | Permissions to access camera and library | H | 2hrs | 0hrs |
-
 | Total | / | 62hrs| 0hrs | 
 
 ## Helper Functions
@@ -131,6 +130,7 @@ Helper functions should be generic enought that they can be reused in other appl
 | react-native-image-picker package | pick an image in app|
 | @merryjs/photo-viewer | view the image ( edit screen) |
 | CameraKit API | Access ios camera |
+| Unsplash API | mock data , random images |
 
 ## Code Snippet
 
