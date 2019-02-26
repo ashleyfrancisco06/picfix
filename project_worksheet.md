@@ -8,8 +8,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Description | Incomplete
-|Day 2| Wireframes / Priority Matrix / Functional Components | Incomplete
+|Day 1| Project Description | Complete
+|Day 2| Wireframes / Priority Matrix / Functional Components | Complete
 |Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Day 4| Pseudocode / actual code | Incomplete
 |Day 5| Initial Clickable Model  | Incomplete
@@ -19,39 +19,65 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+PicFix:
+A  mobile photo editing app that allows you to resize, filter, and add text to your photos! You can upload photos from your library or take a photo directly in the app. You can then save them on to your library(on phone), add to album(on app) and/or share directly on to your social media! 
+
 
 ## Wireframes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe.
+
+Login:
+https://res.cloudinary.com/ashleyfrancisco/image/upload/v1551196229/Login.jpg
+- has two input fields, username and password. Link to Sign up for a new account, link to reset password if forgotten.
+
+Sign Up:
+https://res.cloudinary.com/ashleyfrancisco/image/upload/v1551196229/Sign_Up.jpg
+- has three input fields (email,username,password) and link to go back to Login page.
+
+Library(Main Screen):
+https://res.cloudinary.com/ashleyfrancisco/image/upload/v1551196229/Library.jpg
+- has all pictures for user, menu on bottom ( edit new photo, albums, and take a photo) 
+- hamburger menu contains Contact Us and Delete Account 
+
+Edit:
+https://res.cloudinary.com/ashleyfrancisco/image/upload/v1551196229/Edit.jpg
+- has menu on bottom, top part is all the variations of the specific feature, bottom part is the features
+
+Done Editing:
+https://res.cloudinary.com/ashleyfrancisco/image/upload/v1551196229/Finish.jpg
+- takes you back to main screen (faded in background) with a nav on bottom ( close screen, Save to camera roll, and Share)
+
+
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matix.  
+https://res.cloudinary.com/ashleyfrancisco/image/upload/v1551198304/Priority_Matrix.jpg
 
-### MVP/PostMVP - 5min
+### MVP/PostMVP
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
-
-#### SAMPLE.....
 #### MVP 
-
-- Find and use external api 
-- Render data on page in a list
+- User Authentication (Login, Sign Up)
+- Edit a photo with three main features:  Filter, Resize, and Text 
+- take photo in App
+- Save to phone/ Share to Social Media
+- Add photo to Album
+- Permissions to access camera, photos library, other apps (Social media) 
+- Google API for user sign in/ create account 
 
 #### PostMVP 
 
-- Add data to favorites section
+- Add Additional Features ( Exposure, contrast, lux, saturation, highlights, etc)
+- Add (in Contact Us) a link to open email of user to send email.
+- Desktop view
 
 ## Architectural Design
 
-Define the the components and the architectural design of your app.
-
-#### [SAMPLE FROM A MAP BASED PROJECT](https://res.cloudinary.com/dvjtpejbw/image/upload/v1540221204/20181022_111216.jpg)
+ ![Architectural Design](https://res.cloudinary.com/ashleyfrancisco/image/upload/v1551199159/Arch_design.jpg)
+ 
 
 ## ERD
 
-Create the ERD model for your project
+![ERD](https://res.cloudinary.com/ashleyfrancisco/image/upload/v1551196229/ERD.jpg)
 
 ## UI Components
 
