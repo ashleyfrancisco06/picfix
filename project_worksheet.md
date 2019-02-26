@@ -107,7 +107,17 @@ Helper functions should be generic enought that they can be reused in other appl
 | Capitalize | This will capitalize the first letter in a string of text | 
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project. 
+| Library | What it does |
+| --- | :---: |
+ | Google API | allows user to create account with their google account|
+ | Camera Roll API | allows access to camera |
+ | react-native-image-marker package| add an image/ logo to image|
+ | react-native-fetch-blob package| allows user to fetch(grab) image(blob)|
+ | react-native-image-resizer package | resize image in app |
+ | react-native-image-filter-kit package | add filter to image in app |
+ | react-native-image-picker package | pick an image in app|
+ | @merryjs/photo-viewer | view the image ( edit screen) |
+ | Expo | |
  
  #### SAMPLE.....
 | Library | What it Does | 
