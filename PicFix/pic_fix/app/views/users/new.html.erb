@@ -1,0 +1,8 @@
+<h2> Log in! </h2>
+
+<%= form_for @user, url: session_path do |form| %>
+    <%= form.text_field :email, placeholder: 'your email', required: true %>
+    <%= form.password_field :password, placeholder: 'your password', required: true %>
+
+    <%= submit_tag 'Log in' %>
+<% end %>

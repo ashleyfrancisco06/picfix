@@ -1,0 +1,5 @@
+<%= link_to "Users", users_path %>
+
+<% @users.ech do |u| %>
+<h3><%= link_to u.name, user_path(u) %> </h3>
+<p> <%= u.email %> </p>
