@@ -1,25 +1,47 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import * as RN from 'react-native';
+import axios from "axios"
+
 
 export default class Home extends React.Component {
-    render() {
-      return (
-        <View style={styles.container}>
-         
-         <Text>Login/ Sign Up</Text>
-          <RN.Button title="Library" onPress={() => { this.props.navigation.navigate("Library")}} />
-        </View>
-      );
+  signInFunction = async() => {
+    let user = {
+      name: this.state.name,
+      email: this.state.email,
+      password: this.state.password
     }
+    console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.nbgng')
+    // await axios.post(`http://173.2.3.176:3000/users`, user)
+    // this.props.navigation.navigate("Library")
   }
   
-  const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: 'green',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-  });
-  
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text>Sign Up</Text>
+        <RN.TextInput placeholder="Name" onChange={(name) => this.setState({ name })} style={styles.input} />
+        <RN.TextInput placeholder="E-mail" onChange={(email) => this.setState({ email })}style={styles.input} />
+        <RN.TextInput secureTextEntry={true} placeholder="Password" onChange={(password) => this.setState({ password })} style={styles.input} />
+
+
+        <RN.Button title="Sign Up" onPress={this.signInFunction} />
+      </View>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'green',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  input:{
+    borderColor: 'black',
+    borderWidth: 1,
+    width: '40%'
+  }
+});
+

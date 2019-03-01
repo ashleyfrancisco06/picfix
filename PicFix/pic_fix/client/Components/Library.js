@@ -67,7 +67,6 @@ export default class Library extends React.Component {
 
                 
                 <RN.Button title="Edit Photo" onPress={() => { this.props.navigation.navigate("EditPhoto")}} />
-                <RN.Button title="Camera" onPress={() => { this.props.navigation.navigate("Cam")}} />
                 <RN.Button title="Albums" onPress={() => { this.props.navigation.navigate("Albums")}} />
 
 

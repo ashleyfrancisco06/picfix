@@ -1,13 +1,10 @@
 class UsersController < ApplicationController
-  before_action :ensure_signed_in, only: [:show, :index]
-  before_action :ensure_signed_out, only: [:new, :create]
+  # before_action :ensure_signed_in, only: [:show, :index]
+  # before_action :ensure_signed_out, only: [:new, :create]
 
   def index
     @users = User.all
-    render json: {
-             message: "ok",
-             users_data: @users,
-           }
+    render json: @users
   end
 
   def show
@@ -26,19 +23,17 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
-    render :new
   end
 
   def create
     @user = User.new(user_params)
+    @user.password = params[:password]
 
-    if user.save
-      sign_in(@user)
-      flash[:notice] = "You are signed in."
-      redirect_to users_path
-    else
-      redirect_to "/users/new"
-    end
+    @user.save!
+
+    render json: {
+      user: @user,
+    }, status: 201
   end
 
   def edit

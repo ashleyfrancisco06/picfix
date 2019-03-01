@@ -6760,3 +6760,509 @@ Processing by PhotosController#index as */*
 Completed 200 OK in 6ms (Views: 3.0ms | ActiveRecord: 0.8ms)
 
 
+Started GET "/users/1/albums/1/photos" for 173.2.2.128 at 2019-03-01 12:36:14 -0500
+Processing by PhotosController#index as */*
+  Parameters: {"user_id"=>"1", "album_id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:3
+  [1m[36mAlbum Load (0.9ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."user_id" = $1 AND "albums"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:4
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."album_id" = $1[0m  [["album_id", 1]]
+  ↳ app/controllers/photos_controller.rb:6
+Completed 200 OK in 31ms (Views: 6.2ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/users/1/albums/1/photos" for 173.2.2.128 at 2019-03-01 12:41:15 -0500
+Processing by PhotosController#index as */*
+  Parameters: {"user_id"=>"1", "album_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:3
+  [1m[36mAlbum Load (0.6ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."user_id" = $1 AND "albums"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:4
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."album_id" = $1[0m  [["album_id", 1]]
+  ↳ app/controllers/photos_controller.rb:6
+Completed 200 OK in 9ms (Views: 2.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/1/albums/1/photos" for 173.2.2.128 at 2019-03-01 14:07:18 -0500
+Processing by PhotosController#index as */*
+  Parameters: {"user_id"=>"1", "album_id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:3
+  [1m[36mAlbum Load (0.5ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."user_id" = $1 AND "albums"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:4
+  [1m[36mPhoto Load (5.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."album_id" = $1[0m  [["album_id", 1]]
+  ↳ app/controllers/photos_controller.rb:6
+Completed 200 OK in 38ms (Views: 9.1ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/users/1/albums/1/photos" for 173.2.2.128 at 2019-03-01 14:07:36 -0500
+Processing by PhotosController#index as */*
+  Parameters: {"user_id"=>"1", "album_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:3
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."user_id" = $1 AND "albums"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:4
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."album_id" = $1[0m  [["album_id", 1]]
+  ↳ app/controllers/photos_controller.rb:6
+Completed 200 OK in 14ms (Views: 6.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/1/albums/1/photos" for 173.2.2.128 at 2019-03-01 14:17:19 -0500
+Processing by PhotosController#index as */*
+  Parameters: {"user_id"=>"1", "album_id"=>"1"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:3
+  [1m[36mAlbum Load (0.6ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."user_id" = $1 AND "albums"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:4
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."album_id" = $1[0m  [["album_id", 1]]
+  ↳ app/controllers/photos_controller.rb:6
+Completed 200 OK in 27ms (Views: 6.5ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/users/1/albums/1/photos" for 173.2.2.128 at 2019-03-01 15:17:00 -0500
+Processing by PhotosController#index as */*
+  Parameters: {"user_id"=>"1", "album_id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:3
+  [1m[36mAlbum Load (0.5ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."user_id" = $1 AND "albums"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:4
+  [1m[36mPhoto Load (1.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."album_id" = $1[0m  [["album_id", 1]]
+  ↳ app/controllers/photos_controller.rb:6
+Completed 200 OK in 34ms (Views: 7.2ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/users/1/albums/1/photos" for 173.2.2.128 at 2019-03-01 15:35:52 -0500
+Processing by PhotosController#index as */*
+  Parameters: {"user_id"=>"1", "album_id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:3
+  [1m[36mAlbum Load (0.6ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."user_id" = $1 AND "albums"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:4
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."album_id" = $1[0m  [["album_id", 1]]
+  ↳ app/controllers/photos_controller.rb:6
+Completed 200 OK in 30ms (Views: 5.4ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/users/1/albums/1/photos" for 173.2.2.128 at 2019-03-01 15:36:19 -0500
+Processing by PhotosController#index as */*
+  Parameters: {"user_id"=>"1", "album_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:3
+  [1m[36mAlbum Load (0.5ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."user_id" = $1 AND "albums"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:4
+  [1m[36mPhoto Load (0.6ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."album_id" = $1[0m  [["album_id", 1]]
+  ↳ app/controllers/photos_controller.rb:6
+Completed 200 OK in 11ms (Views: 2.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/users/1/albums/1/photos" for 173.2.2.128 at 2019-03-01 15:36:45 -0500
+Processing by PhotosController#index as */*
+  Parameters: {"user_id"=>"1", "album_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:3
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."user_id" = $1 AND "albums"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:4
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."album_id" = $1[0m  [["album_id", 1]]
+  ↳ app/controllers/photos_controller.rb:6
+Completed 200 OK in 6ms (Views: 2.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/1/albums/1/photos" for 173.2.2.128 at 2019-03-01 15:37:49 -0500
+Processing by PhotosController#index as */*
+  Parameters: {"user_id"=>"1", "album_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:3
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."user_id" = $1 AND "albums"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:4
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."album_id" = $1[0m  [["album_id", 1]]
+  ↳ app/controllers/photos_controller.rb:6
+Completed 200 OK in 7ms (Views: 2.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/1/albums/1/photos" for 173.2.2.128 at 2019-03-01 15:38:23 -0500
+Processing by PhotosController#index as */*
+  Parameters: {"user_id"=>"1", "album_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:3
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."user_id" = $1 AND "albums"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:4
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."album_id" = $1[0m  [["album_id", 1]]
+  ↳ app/controllers/photos_controller.rb:6
+Completed 200 OK in 10ms (Views: 3.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/1/albums/1/photos" for 173.2.2.128 at 2019-03-01 15:38:51 -0500
+Processing by PhotosController#index as */*
+  Parameters: {"user_id"=>"1", "album_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:3
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."user_id" = $1 AND "albums"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:4
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."album_id" = $1[0m  [["album_id", 1]]
+  ↳ app/controllers/photos_controller.rb:6
+Completed 200 OK in 8ms (Views: 3.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1/albums/1/photos" for 173.2.2.128 at 2019-03-01 15:39:21 -0500
+Processing by PhotosController#index as */*
+  Parameters: {"user_id"=>"1", "album_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:3
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."user_id" = $1 AND "albums"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:4
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."album_id" = $1[0m  [["album_id", 1]]
+  ↳ app/controllers/photos_controller.rb:6
+Completed 200 OK in 7ms (Views: 2.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/1/albums/1/photos" for 173.2.2.128 at 2019-03-01 15:41:10 -0500
+Processing by PhotosController#index as */*
+  Parameters: {"user_id"=>"1", "album_id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:3
+  [1m[36mAlbum Load (0.8ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."user_id" = $1 AND "albums"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:4
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."album_id" = $1[0m  [["album_id", 1]]
+  ↳ app/controllers/photos_controller.rb:6
+Completed 200 OK in 26ms (Views: 7.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/1/albums/1/photos" for 173.2.2.128 at 2019-03-01 15:57:48 -0500
+Processing by PhotosController#index as */*
+  Parameters: {"user_id"=>"1", "album_id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:3
+  [1m[36mAlbum Load (0.5ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."user_id" = $1 AND "albums"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:4
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."album_id" = $1[0m  [["album_id", 1]]
+  ↳ app/controllers/photos_controller.rb:6
+Completed 200 OK in 16ms (Views: 3.2ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/users/1/albums/1/photos" for 173.2.2.128 at 2019-03-01 15:59:55 -0500
+Processing by PhotosController#index as */*
+  Parameters: {"user_id"=>"1", "album_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:3
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."user_id" = $1 AND "albums"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:4
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."album_id" = $1[0m  [["album_id", 1]]
+  ↳ app/controllers/photos_controller.rb:6
+Completed 200 OK in 6ms (Views: 1.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/1/albums/1/photos" for 173.2.2.128 at 2019-03-01 16:03:06 -0500
+Processing by PhotosController#index as */*
+  Parameters: {"user_id"=>"1", "album_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:3
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."user_id" = $1 AND "albums"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:4
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."album_id" = $1[0m  [["album_id", 1]]
+  ↳ app/controllers/photos_controller.rb:6
+Completed 200 OK in 6ms (Views: 2.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/1/albums/1/photos" for 173.2.2.128 at 2019-03-01 16:04:01 -0500
+Processing by PhotosController#index as */*
+  Parameters: {"user_id"=>"1", "album_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:3
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."user_id" = $1 AND "albums"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:4
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."album_id" = $1[0m  [["album_id", 1]]
+  ↳ app/controllers/photos_controller.rb:6
+Completed 200 OK in 6ms (Views: 2.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/1/albums/1/photos" for 173.2.2.128 at 2019-03-01 16:04:04 -0500
+Processing by PhotosController#index as */*
+  Parameters: {"user_id"=>"1", "album_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:3
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."user_id" = $1 AND "albums"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:4
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."album_id" = $1[0m  [["album_id", 1]]
+  ↳ app/controllers/photos_controller.rb:6
+Completed 200 OK in 6ms (Views: 2.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1/albums/1/photos" for 173.2.2.128 at 2019-03-01 16:05:33 -0500
+Processing by PhotosController#index as */*
+  Parameters: {"user_id"=>"1", "album_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:3
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."user_id" = $1 AND "albums"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:4
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."album_id" = $1[0m  [["album_id", 1]]
+  ↳ app/controllers/photos_controller.rb:6
+Completed 200 OK in 6ms (Views: 1.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/1/albums/1/photos" for 173.2.2.128 at 2019-03-01 16:11:28 -0500
+Processing by PhotosController#index as */*
+  Parameters: {"user_id"=>"1", "album_id"=>"1"}
+  [1m[36mUser Load (11.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:3
+  [1m[36mAlbum Load (2.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."user_id" = $1 AND "albums"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:4
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."album_id" = $1[0m  [["album_id", 1]]
+  ↳ app/controllers/photos_controller.rb:6
+Completed 200 OK in 38ms (Views: 4.3ms | ActiveRecord: 21.7ms)
+
+
+Started GET "/users/1/albums/1/photos" for 173.2.2.128 at 2019-03-01 16:21:55 -0500
+Processing by PhotosController#index as */*
+  Parameters: {"user_id"=>"1", "album_id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:3
+  [1m[36mAlbum Load (0.6ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."user_id" = $1 AND "albums"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:4
+  [1m[36mPhoto Load (0.6ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."album_id" = $1[0m  [["album_id", 1]]
+  ↳ app/controllers/photos_controller.rb:6
+Completed 200 OK in 45ms (Views: 9.7ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/users/1/albums/1/photos" for 173.2.2.128 at 2019-03-01 16:35:22 -0500
+Processing by PhotosController#index as */*
+  Parameters: {"user_id"=>"1", "album_id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:3
+  [1m[36mAlbum Load (0.7ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."user_id" = $1 AND "albums"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:4
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."album_id" = $1[0m  [["album_id", 1]]
+  ↳ app/controllers/photos_controller.rb:6
+Completed 200 OK in 37ms (Views: 6.8ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/users/1/albums/1/photos" for 173.2.2.128 at 2019-03-01 16:35:47 -0500
+Processing by PhotosController#index as */*
+  Parameters: {"user_id"=>"1", "album_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:3
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."user_id" = $1 AND "albums"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:4
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."album_id" = $1[0m  [["album_id", 1]]
+  ↳ app/controllers/photos_controller.rb:6
+Completed 200 OK in 11ms (Views: 3.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/1/albums/1/photos" for 173.2.2.128 at 2019-03-01 16:51:11 -0500
+Processing by PhotosController#index as */*
+  Parameters: {"user_id"=>"1", "album_id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:3
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."user_id" = $1 AND "albums"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:4
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."album_id" = $1[0m  [["album_id", 1]]
+  ↳ app/controllers/photos_controller.rb:6
+Completed 200 OK in 14ms (Views: 2.9ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/users/1/albums/1/photos" for 173.2.2.128 at 2019-03-01 16:51:26 -0500
+Processing by PhotosController#index as */*
+  Parameters: {"user_id"=>"1", "album_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:3
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."user_id" = $1 AND "albums"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:4
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."album_id" = $1[0m  [["album_id", 1]]
+  ↳ app/controllers/photos_controller.rb:6
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/1/albums/1/photos" for 173.2.2.128 at 2019-03-01 17:04:39 -0500
+Processing by PhotosController#index as */*
+  Parameters: {"user_id"=>"1", "album_id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:3
+  [1m[36mAlbum Load (0.8ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."user_id" = $1 AND "albums"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:4
+  [1m[36mPhoto Load (0.6ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."album_id" = $1[0m  [["album_id", 1]]
+  ↳ app/controllers/photos_controller.rb:6
+Completed 200 OK in 42ms (Views: 9.7ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/users/1/albums/1/photos" for 173.2.2.128 at 2019-03-01 17:07:06 -0500
+Processing by PhotosController#index as */*
+  Parameters: {"user_id"=>"1", "album_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:3
+  [1m[36mAlbum Load (0.6ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."user_id" = $1 AND "albums"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:4
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."album_id" = $1[0m  [["album_id", 1]]
+  ↳ app/controllers/photos_controller.rb:6
+Completed 200 OK in 89ms (Views: 10.2ms | ActiveRecord: 22.9ms)
+
+
+Started GET "/users" for 173.2.3.176 at 2019-03-01 17:08:14 -0500
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 215ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `flash' for #<UsersController:0x00007fa41f9dbe60>):
+  
+app/controllers/application_controller.rb:19:in `ensure_signed_in'
+Started GET "/users" for 173.2.3.176 at 2019-03-01 17:08:40 -0500
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 127ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `flash' for #<UsersController:0x00007fa41f91f648>):
+  
+app/controllers/application_controller.rb:19:in `ensure_signed_in'
+Started GET "/users" for 173.2.3.176 at 2019-03-01 17:08:43 -0500
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `flash' for #<UsersController:0x00007fa4221ec198>):
+  
+app/controllers/application_controller.rb:19:in `ensure_signed_in'
+Started GET "/users" for 173.2.3.176 at 2019-03-01 17:09:42 -0500
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 88ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `flash' for #<UsersController:0x00007fa422166818>):
+  
+app/controllers/application_controller.rb:19:in `ensure_signed_in'
+Started GET "/users" for 173.2.3.176 at 2019-03-01 17:09:43 -0500
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `flash' for #<UsersController:0x00007fa41e9d74b0>):
+  
+app/controllers/application_controller.rb:19:in `ensure_signed_in'
+Started GET "/users" for 173.2.3.176 at 2019-03-01 17:10:27 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:7
+Completed 200 OK in 17ms (Views: 7.3ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/users/1/albums/1/photos" for 173.2.2.128 at 2019-03-01 17:10:57 -0500
+Processing by PhotosController#index as */*
+  Parameters: {"user_id"=>"1", "album_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:3
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."user_id" = $1 AND "albums"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:4
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."album_id" = $1[0m  [["album_id", 1]]
+  ↳ app/controllers/photos_controller.rb:6
+Completed 200 OK in 31ms (Views: 6.9ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/users" for 173.2.3.176 at 2019-03-01 17:11:06 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:7
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 173.2.2.128 at 2019-03-01 17:12:24 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>{"dispatchConfig"=>nil, "_targetInst"=>nil, "_dispatchListeners"=>nil, "_dispatchInstances"=>nil, "nativeEvent"=>nil, "type"=>nil, "target"=>nil, "eventPhase"=>nil, "bubbles"=>nil, "cancelable"=>nil, "defaultPrevented"=>nil, "isTrusted"=>nil}, "email"=>{"dispatchConfig"=>nil, "_targetInst"=>nil, "_dispatchListeners"=>nil, "_dispatchInstances"=>nil, "nativeEvent"=>nil, "type"=>nil, "target"=>nil, "eventPhase"=>nil, "bubbles"=>nil, "cancelable"=>nil, "defaultPrevented"=>nil, "isTrusted"=>nil}, "password"=>"[FILTERED]", "user"=>{"name"=>{"dispatchConfig"=>nil, "_targetInst"=>nil, "_dispatchListeners"=>nil, "_dispatchInstances"=>nil, "nativeEvent"=>nil, "type"=>nil, "target"=>nil, "eventPhase"=>nil, "bubbles"=>nil, "cancelable"=>nil, "defaultPrevented"=>nil, "isTrusted"=>nil}, "email"=>{"dispatchConfig"=>nil, "_targetInst"=>nil, "_dispatchListeners"=>nil, "_dispatchInstances"=>nil, "nativeEvent"=>nil, "type"=>nil, "target"=>nil, "eventPhase"=>nil, "bubbles"=>nil, "cancelable"=>nil, "defaultPrevented"=>nil, "isTrusted"=>nil}, "password"=>"[FILTERED]"}}
+Unpermitted parameters: :name, :email, :password
+  [1m[35m (46.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:32
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (4.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:32
+Completed 422 Unprocessable Entity in 178ms (ActiveRecord: 51.5ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Name can't be blank, Email can't be blank, Password is too long (maximum is 72 characters)):
+  
+app/controllers/users_controller.rb:32:in `create'
+Started GET "/users" for 173.2.3.176 at 2019-03-01 17:12:35 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:7
+Completed 200 OK in 23ms (Views: 16.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 173.2.3.176 at 2019-03-01 17:12:35 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:7
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/users" for 173.2.2.128 at 2019-03-01 17:12:41 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>{"dispatchConfig"=>nil, "_targetInst"=>nil, "_dispatchListeners"=>nil, "_dispatchInstances"=>nil, "nativeEvent"=>nil, "type"=>nil, "target"=>nil, "eventPhase"=>nil, "bubbles"=>nil, "cancelable"=>nil, "defaultPrevented"=>nil, "isTrusted"=>nil}, "email"=>{"dispatchConfig"=>nil, "_targetInst"=>nil, "_dispatchListeners"=>nil, "_dispatchInstances"=>nil, "nativeEvent"=>nil, "type"=>nil, "target"=>nil, "eventPhase"=>nil, "bubbles"=>nil, "cancelable"=>nil, "defaultPrevented"=>nil, "isTrusted"=>nil}, "password"=>"[FILTERED]", "user"=>{"name"=>{"dispatchConfig"=>nil, "_targetInst"=>nil, "_dispatchListeners"=>nil, "_dispatchInstances"=>nil, "nativeEvent"=>nil, "type"=>nil, "target"=>nil, "eventPhase"=>nil, "bubbles"=>nil, "cancelable"=>nil, "defaultPrevented"=>nil, "isTrusted"=>nil}, "email"=>{"dispatchConfig"=>nil, "_targetInst"=>nil, "_dispatchListeners"=>nil, "_dispatchInstances"=>nil, "nativeEvent"=>nil, "type"=>nil, "target"=>nil, "eventPhase"=>nil, "bubbles"=>nil, "cancelable"=>nil, "defaultPrevented"=>nil, "isTrusted"=>nil}, "password"=>"[FILTERED]"}}
+Unpermitted parameters: :name, :email, :password
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:32
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:32
+Completed 422 Unprocessable Entity in 75ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Name can't be blank, Email can't be blank, Password is too long (maximum is 72 characters)):
+  
+app/controllers/users_controller.rb:32:in `create'
+Started POST "/users" for 173.2.2.128 at 2019-03-01 17:12:42 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>{"dispatchConfig"=>nil, "_targetInst"=>nil, "_dispatchListeners"=>nil, "_dispatchInstances"=>nil, "nativeEvent"=>nil, "type"=>nil, "target"=>nil, "eventPhase"=>nil, "bubbles"=>nil, "cancelable"=>nil, "defaultPrevented"=>nil, "isTrusted"=>nil}, "email"=>{"dispatchConfig"=>nil, "_targetInst"=>nil, "_dispatchListeners"=>nil, "_dispatchInstances"=>nil, "nativeEvent"=>nil, "type"=>nil, "target"=>nil, "eventPhase"=>nil, "bubbles"=>nil, "cancelable"=>nil, "defaultPrevented"=>nil, "isTrusted"=>nil}, "password"=>"[FILTERED]", "user"=>{"name"=>{"dispatchConfig"=>nil, "_targetInst"=>nil, "_dispatchListeners"=>nil, "_dispatchInstances"=>nil, "nativeEvent"=>nil, "type"=>nil, "target"=>nil, "eventPhase"=>nil, "bubbles"=>nil, "cancelable"=>nil, "defaultPrevented"=>nil, "isTrusted"=>nil}, "email"=>{"dispatchConfig"=>nil, "_targetInst"=>nil, "_dispatchListeners"=>nil, "_dispatchInstances"=>nil, "nativeEvent"=>nil, "type"=>nil, "target"=>nil, "eventPhase"=>nil, "bubbles"=>nil, "cancelable"=>nil, "defaultPrevented"=>nil, "isTrusted"=>nil}, "password"=>"[FILTERED]"}}
+Unpermitted parameters: :name, :email, :password
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:32
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:32
+Completed 422 Unprocessable Entity in 82ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Name can't be blank, Email can't be blank, Password is too long (maximum is 72 characters)):
+  
+app/controllers/users_controller.rb:32:in `create'
+Started POST "/users" for 173.2.2.128 at 2019-03-01 17:13:28 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>{"dispatchConfig"=>nil, "_targetInst"=>nil, "_dispatchListeners"=>nil, "_dispatchInstances"=>nil, "nativeEvent"=>nil, "type"=>nil, "target"=>nil, "eventPhase"=>nil, "bubbles"=>nil, "cancelable"=>nil, "defaultPrevented"=>nil, "isTrusted"=>nil}, "email"=>{"dispatchConfig"=>nil, "_targetInst"=>nil, "_dispatchListeners"=>nil, "_dispatchInstances"=>nil, "nativeEvent"=>nil, "type"=>nil, "target"=>nil, "eventPhase"=>nil, "bubbles"=>nil, "cancelable"=>nil, "defaultPrevented"=>nil, "isTrusted"=>nil}, "password"=>"[FILTERED]", "user"=>{"name"=>{"dispatchConfig"=>nil, "_targetInst"=>nil, "_dispatchListeners"=>nil, "_dispatchInstances"=>nil, "nativeEvent"=>nil, "type"=>nil, "target"=>nil, "eventPhase"=>nil, "bubbles"=>nil, "cancelable"=>nil, "defaultPrevented"=>nil, "isTrusted"=>nil}, "email"=>{"dispatchConfig"=>nil, "_targetInst"=>nil, "_dispatchListeners"=>nil, "_dispatchInstances"=>nil, "nativeEvent"=>nil, "type"=>nil, "target"=>nil, "eventPhase"=>nil, "bubbles"=>nil, "cancelable"=>nil, "defaultPrevented"=>nil, "isTrusted"=>nil}, "password"=>"[FILTERED]"}}
+Unpermitted parameters: :name, :email, :password
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:32
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:32
+Completed 422 Unprocessable Entity in 70ms (ActiveRecord: 1.1ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Name can't be blank, Email can't be blank, Password is too long (maximum is 72 characters)):
+  
+app/controllers/users_controller.rb:32:in `create'
+Started POST "/users" for 173.2.2.128 at 2019-03-01 17:14:50 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>{"dispatchConfig"=>nil, "_targetInst"=>nil, "_dispatchListeners"=>nil, "_dispatchInstances"=>nil, "nativeEvent"=>nil, "type"=>nil, "target"=>nil, "eventPhase"=>nil, "bubbles"=>nil, "cancelable"=>nil, "defaultPrevented"=>nil, "isTrusted"=>nil}, "email"=>{"dispatchConfig"=>nil, "_targetInst"=>nil, "_dispatchListeners"=>nil, "_dispatchInstances"=>nil, "nativeEvent"=>nil, "type"=>nil, "target"=>nil, "eventPhase"=>nil, "bubbles"=>nil, "cancelable"=>nil, "defaultPrevented"=>nil, "isTrusted"=>nil}, "password"=>"[FILTERED]", "user"=>{"name"=>{"dispatchConfig"=>nil, "_targetInst"=>nil, "_dispatchListeners"=>nil, "_dispatchInstances"=>nil, "nativeEvent"=>nil, "type"=>nil, "target"=>nil, "eventPhase"=>nil, "bubbles"=>nil, "cancelable"=>nil, "defaultPrevented"=>nil, "isTrusted"=>nil}, "email"=>{"dispatchConfig"=>nil, "_targetInst"=>nil, "_dispatchListeners"=>nil, "_dispatchInstances"=>nil, "nativeEvent"=>nil, "type"=>nil, "target"=>nil, "eventPhase"=>nil, "bubbles"=>nil, "cancelable"=>nil, "defaultPrevented"=>nil, "isTrusted"=>nil}, "password"=>"[FILTERED]"}}
+Unpermitted parameters: :name, :email, :password
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:32
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:32
+Completed 422 Unprocessable Entity in 91ms (ActiveRecord: 1.2ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Name can't be blank, Email can't be blank, Password is too long (maximum is 72 characters)):
+  
+app/controllers/users_controller.rb:32:in `create'
