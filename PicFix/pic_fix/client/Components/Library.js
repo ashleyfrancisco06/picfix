@@ -1,12 +1,14 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, ListView} from 'react-native';
+import * as RN from 'react-native';
+
+// home ip: 192.168.1.184
+// school ip: 173.2.3.176
 
 export default class Library extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            apiData: null,
-            apiDataLoaded: false,
             photoData: null,
             photoApiDataLoaded: false
         }
@@ -15,64 +17,59 @@ export default class Library extends React.Component {
 
     componentDidMount() {
         this.fetchPhotos();
-        this.fetchAlbums();
+    }
 
-    }
-    fetchAlbums = (req, res) => {
-        fetch(`http://173.2.3.176:3000/users/1/albums`)
-            .then((res) => res.json())
-            .then((data) => {
-                console.log('fetched line 24', data)
-                this.setState({
-                    apiData: data.album_data,
-                    apiDataLoaded: true,
-                })
-            })
-            .catch(err => console.log(err))
-    }
     fetchPhotos = (req, res) => {
         fetch(`http://173.2.3.176:3000/users/1/albums/1/photos`)
             .then((res) => res.json())
             .then((data) => {
-                console.log('fetched line 27', data)
+                // console.log('fetched line 27', data)
                 this.setState({
-
                     photoData: data.photos_data,
+                    albumName: data.album,
                     photoApiDataLoaded: true
                 })
-                console.log('fetched line 33', data)
+                // console.log('fetched line 33', data)
 
             })
             .catch(err => console.log(err))
-            
+
     }
-    
+    renderPhotos = () => {
 
-
-   
-    render() {
-               {(this.state.apiDataLoaded && this.state.photoApiDataLoaded) ?  
-                photos = this.state.apiData.map((album, i) => {
-           return  this.state.photoData.map((photo, i) => {
-                 console.log('photo', photo)
-                 return (
-                    <View key = {i} style={styles.albumContainer}>
-                         <Text style={styles.albumName}>{album.name}</Text>  
-                         <Image source={{uri: photo.image}} style={{ width: 25,
-        height: 25}} />
-                     </View>
-                 );
- 
-             })
-                }) : <Text>Loading...</Text>
-         }
-        console.log('line 60 in render', this.state.photoData)
-       let photos;
+        console.log(this.state.albumName, "line 35")
+        console.log(this.state.photoData, 'after');
         
+       return this.state.photoData.map((data, i) => {
+
+            console.log(data.image, "hello");
+            return (
+                
+                <View key={i} style={styles.albumContainer}>
+                    <Image source={{ uri:data.image }} style={styles.photo} />
+                </View>
+            );
+
+        })
+    }
+
+    render() {
+       
+        // console.log('line 60 in render', this.state.photoData)
         return (
             <View style={styles.container}>
+                {(this.state.photoApiDataLoaded) ? <View>
+                    
+                    <Text>{this.state.albumName}</Text>
+                    {this.renderPhotos()}
 
-                {photos}
+                </View> : <Text>Loading...</Text>}
+
+                
+                <RN.Button title="Edit Photo" onPress={() => { this.props.navigation.navigate("EditPhoto")}} />
+                <RN.Button title="Camera" onPress={() => { this.props.navigation.navigate("Cam")}} />
+                <RN.Button title="Albums" onPress={() => { this.props.navigation.navigate("Albums")}} />
+
 
             </View>
         );
@@ -82,25 +79,31 @@ export default class Library extends React.Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        flexDirection:'row',
+        flexWrap: 'wrap',
         backgroundColor: 'green',
         alignItems: 'center',
         justifyContent: 'center',
     },
-    albumContainer:{
+    albumContainer: {
         flex: 1,
-        width: 300,
-        height:100,
+        flexDirection:'row',
+        flexWrap: 'wrap',
+        width: 100,
+        height: 100,
         backgroundColor: 'white',
         alignItems: 'center',
         justifyContent: 'center',
     },
-    photo:{
-        flex:1,
-       width:200,
-       height:200,
+    photo: {
+        flex: 1,
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        width: 100,
+        height: 100,
         padding: 10
     },
-    albumName:{
+    albumName: {
         fontSize: 30,
         color: 'white'
 

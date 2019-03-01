@@ -2,12 +2,14 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import * as RN from 'react-native';
 
-export default class EditPhoto extends React.Component {
+export default class Albums extends React.Component {
     render() {
       return (
         <View style={styles.container}>
          
-         <Text>Edit Your Photo</Text>
+         <Text>List All Albums</Text>
+         <RN.Button title="Back" onPress={() => { this.props.navigation.navigate("Library")}} />
+
         </View>
       );
     }

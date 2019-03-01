@@ -1,15 +1,18 @@
-import React from 'react';
 import Home from "./Components/Home"
 import Library from "./Components/Library";
-
-
-
+import EditPhoto from "./Components/EditPhoto"
+import Cam from "./Components/Camera"
+import Albums from "./Components/Albums"
 import { createSwitchNavigator, createBottomTabNavigator, createAppContainer } from "react-navigation";
 
 
 const MainNavigator = createSwitchNavigator({
    Home,
-   Library
+   Library,
+   EditPhoto,
+   Cam,
+   Albums
+
   
 },
 {

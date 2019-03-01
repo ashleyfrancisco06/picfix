@@ -1,9 +1,13 @@
 class PhotosController < ApplicationController
   def index
-    @photos = Photo.all
+    @user = User.find(params[:user_id])
+    @album = @user.albums.find(params[:album_id])
+    @photos = @album.photos.all
     render json: {
-             message: "ok",
+
+             album: @album.name,
              photos_data: @photos,
+
            }
   end
 
