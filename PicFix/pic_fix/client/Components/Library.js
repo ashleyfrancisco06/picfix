@@ -1,16 +1,18 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, ListView} from 'react-native';
+import { StyleSheet, Text, View, Image, ListView, ScrollView, FlatList, ListItem } from 'react-native';
 import * as RN from 'react-native';
 
 // home ip: 192.168.1.184
 // school ip: 173.2.3.176
+// ztarbucks ip: 172.31.98.233
 
 export default class Library extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
             photoData: null,
-            photoApiDataLoaded: false
+            photoApiDataLoaded: false,
+            columns: 0
         }
     }
 
@@ -27,7 +29,8 @@ export default class Library extends React.Component {
                 this.setState({
                     photoData: data.photos_data,
                     albumName: data.album,
-                    photoApiDataLoaded: true
+                    photoApiDataLoaded: true,
+                    columns: 2
                 })
                 // console.log('fetched line 33', data)
 
@@ -39,14 +42,14 @@ export default class Library extends React.Component {
 
         console.log(this.state.albumName, "line 35")
         console.log(this.state.photoData, 'after');
-        
-       return this.state.photoData.map((data, i) => {
+
+        return this.state.photoData.map((data, i) => {
 
             console.log(data.image, "hello");
             return (
-                
-                <View key={i} style={styles.albumContainer}>
-                    <Image source={{ uri:data.image }} style={styles.photo} />
+
+              <View key={i} style={styles.albumContainer}>
+                    <Image source={{ uri: data.image }} style={styles.photo} />
                 </View>
             );
 
@@ -54,23 +57,21 @@ export default class Library extends React.Component {
     }
 
     render() {
-       
+        columns = this.state
         // console.log('line 60 in render', this.state.photoData)
         return (
-            <View style={styles.container}>
-                {(this.state.photoApiDataLoaded) ? <View>
-                    
-                    <Text>{this.state.albumName}</Text>
-                    {this.renderPhotos()}
+            <ScrollView loop={false}
+                index={0}
+                contentContainerStyle={styles.wrapper}>
 
-                </View> : <Text>Loading...</Text>}
+                {(this.state.photoApiDataLoaded) ?
+                    <View style={styles.container}>
+                        <Text style={styles.albumname}>{this.state.albumName}</Text>
+                       {this.renderPhotos()}
+                    </View>
+                    : <Text>Loading...</Text>}
 
-                
-                <RN.Button title="Edit Photo" onPress={() => { this.props.navigation.navigate("EditPhoto")}} />
-                <RN.Button title="Albums" onPress={() => { this.props.navigation.navigate("Albums")}} />
-
-
-            </View>
+            </ScrollView>
         );
     }
 }
@@ -78,33 +79,44 @@ export default class Library extends React.Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        flexDirection:'row',
+        flexDirection: 'row',
+        width: 450,
+        height: 600,
         flexWrap: 'wrap',
-        backgroundColor: 'green',
+        backgroundColor: 'white',
         alignItems: 'center',
         justifyContent: 'center',
+
     },
     albumContainer: {
-        flex: 1,
-        flexDirection:'row',
+        flex: 0,
+        flexDirection: 'row',
         flexWrap: 'wrap',
-        width: 100,
-        height: 100,
+        borderColor: 'black',
         backgroundColor: 'white',
         alignItems: 'center',
         justifyContent: 'center',
     },
     photo: {
-        flex: 1,
+        flex: 0,
         flexDirection: 'row',
         flexWrap: 'wrap',
-        width: 100,
-        height: 100,
-        padding: 10
+        height: 180,
+        width: 180,
+        padding:25,
+        margin:10,
+        alignItems: 'center',
     },
-    albumName: {
-        fontSize: 30,
-        color: 'white'
+    albumname: {
+        fontSize: 50,
+        color: 'black',
+        alignItems: 'center',
+        padding: 70
 
+    },
+    wrapper: {
+        alignItems: 'center',
+        width: RN.Dimensions.get("window").width,
+        height: RN.Dimensions.get("window").height,
     }
 });

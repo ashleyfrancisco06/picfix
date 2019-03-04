@@ -1,62 +1,56 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, Image, TouchableOpacity } from 'react-native';
-import { ImagePicker, Permissions } from 'expo';
+import { Button, TouchableOpacity, Text, View, Image } from 'react-native';
+import { Asset, ImageManipulator } from 'expo';
 
 
-
-// https://www.youtube.com/watch?v=IGZCtwpnqC8
-// image picker tutorial
-export default class EditPhoto extends React.Component {
+export default class ImageManipulatorSample extends React.Component {
   state = {
-    image: null,
+    ready: false,
+    image: '',
   };
-  selectPicture = async () => {
-    // setting permissions to access camera roll
-    await Permissions.askAsync(Permissions.CAMERA_ROLL)
-    //setting uri and cancelled (depending whic one is clickec on ) to the image library async
-    const { cancelled, uri } = await ImagePicker.launchImageLibraryAsync({
-      aspect: 1,
-      allowsEditing: true
-    })
-    // setting state to the image that is selected 
-   if(!cancelled){ this.setState({ image: uri })}
-  }
-  takePicture = async () => {
-    // setting permissions to access Camera 
-    await Permissions.askAsync(Permissions.CAMERA)
 
-    const { cancelled, uri } = await ImagePicker.launchCameraAsync({
-      allowsEditing: false
-    })
-    this.setState({ image: uri })
+  componentDidMount() {
+    
+    //   const image = Asset.fromModule(this.props.image);
+    //    let imageDownload = image.downloadAsync();
+      this.setState({
+        ready: true,
+        image: this.props.navigation.getParam('image')
+      });
+   
   }
 
   render() {
-    let { image } = this.state;
+    //   let image= this.props.navigation.getParam('image');
+    console.log(this.state.image)
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-
-        <Button title="Gallery" onPress={this.selectPicture}>Gallery</Button>
-        <Button title="Camera" onPress={this.takePicture}>Camera</Button>
-        {image && <Image source={{ uri: image }} style={{ width: 200, height: 200 }} />}
-        <Button title="Back" onPress={() => { this.props.navigation.navigate("Library")}} />
-
+      <View style={{ flex: 1 }}>
+        <View style={{ padding: 10 }}>
+          <Button onPress={this._rotate90andFlip} title="" />
+         {this.state.image !== '' ? <Image style={{height:400, width:400, justifyContent:'center', alignItems:'center'}} source={{uri:this.state.image}} title="" /> : <Text> Not Valid.</Text>}
+         
+        </View>
       </View>
     );
   }
-  
+
+  _rotate90andFlip = async () => {
+    const manipResult = await ImageManipulator.manipulateAsync(
+      this.props.image,
+      [{ rotate: 90}, { flip: { vertical: true }}],
+      { format: 'jpg' }
+    );
+    this.setState({ image: manipResult });
+  }
+
+  _renderImage = () => {
+    return (
+      <View style={{marginVertical: 10, alignItems: 'center', justifyContent: 'center'}}>
+        <Image
+          source={{ uri: this.props.image}}
+          style={{ width: 300, height: 300, resizeMode: 'contain' }}
+        />
+      </View>
+    );
+  };
 }
-
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'green',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  text: {
-    fontSize:15
-  },
-
-});

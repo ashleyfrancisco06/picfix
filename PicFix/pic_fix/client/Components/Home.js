@@ -11,7 +11,7 @@ export default class Home extends React.Component {
       email: this.state.email,
       password: this.state.password
     }
-    console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.nbgng')
+  
     // await axios.post(`http://173.2.3.176:3000/users`, user)
     // this.props.navigation.navigate("Library")
   }
@@ -19,13 +19,13 @@ export default class Home extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Sign Up</Text>
+        {/* <Text>Sign Up</Text>
         <RN.TextInput placeholder="Name" onChange={(name) => this.setState({ name })} style={styles.input} />
         <RN.TextInput placeholder="E-mail" onChange={(email) => this.setState({ email })}style={styles.input} />
-        <RN.TextInput secureTextEntry={true} placeholder="Password" onChange={(password) => this.setState({ password })} style={styles.input} />
+        <RN.TextInput secureTextEntry={true} placeholder="Password" onChange={(password) => this.setState({ password })} style={styles.input} /> */}
 
 
-        <RN.Button title="Sign Up" onPress={this.signInFunction} />
+        <RN.Button title="Sign Up" onPress={() => {this.props.navigation.navigate("Library")}} />
       </View>
     );
   }
