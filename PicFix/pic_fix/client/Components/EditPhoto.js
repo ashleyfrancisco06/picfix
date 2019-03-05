@@ -1,56 +1,73 @@
 import React from 'react';
-import { Button, TouchableOpacity, Text, View, Image } from 'react-native';
+import { Button, TouchableOpacity, Text, View, Image, StyleSheet } from 'react-native';
 import { Asset, ImageManipulator } from 'expo';
 
 
-export default class ImageManipulatorSample extends React.Component {
-  state = {
-    ready: false,
-    image: '',
-  };
+export default class EditPhoto extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      ready: false,
+      image: ''
+    }; 
+  }
 
+
+  editPhoto = async() => {
+   await this.setState({
+      ready: true,
+      image: this.props.navigation.getParam('image')
+    });
+  }
   componentDidMount() {
-    
-    //   const image = Asset.fromModule(this.props.image);
-    //    let imageDownload = image.downloadAsync();
-      this.setState({
-        ready: true,
-        image: this.props.navigation.getParam('image')
-      });
+    async() => {
+      const image = Asset.fromModule(this.props.image)
+      await image.downloadAsync()
+    }
+    this.editPhoto()
+    console.log(`this is to test the async func: ${this.state}`)
    
+  }
+
+  _rotate90andFlip = async () => {
+    // {uri:this.props.navigation.getParam('image')}
+    try {
+      console.log(this.state.image)
+      const manipResult = await ImageManipulator.manipulateAsync(
+       this.state.image,
+        [{ rotate: 90}, { flip: { vertical: true }}],
+        { format: 'png' }
+      );
+      this.setState({ image: manipResult.uri });
+    } catch (err) {console.log(err)}
+  }
+
+  _renderImage = () => {
+    
+    return (
+      <View style={{marginVertical: 10, alignItems: 'center', justifyContent: 'center'}}>
+        <Image style={{height:400, width:400, resizeMode: 'contain', justifyContent:'center', alignItems:'center'}} source={{ uri: this.state.image}} title='' />
+      </View>
+    );
   }
 
   render() {
     //   let image= this.props.navigation.getParam('image');
-    console.log(this.state.image)
+    console.log(`this is after the update: ${this.state}`)
     return (
       <View style={{ flex: 1 }}>
         <View style={{ padding: 10 }}>
-          <Button onPress={this._rotate90andFlip} title="" />
-         {this.state.image !== '' ? <Image style={{height:400, width:400, justifyContent:'center', alignItems:'center'}} source={{uri:this.state.image}} title="" /> : <Text> Not Valid.</Text>}
-         
+          {this.state.ready ? this._renderImage() : <Text> Not Valid.</Text>}
+          <Button title='🔄' onPress={this._rotate90andFlip} style={styles.rotate}/>
         </View>
       </View>
     );
   }
-
-  _rotate90andFlip = async () => {
-    const manipResult = await ImageManipulator.manipulateAsync(
-      this.props.image,
-      [{ rotate: 90}, { flip: { vertical: true }}],
-      { format: 'jpg' }
-    );
-    this.setState({ image: manipResult });
-  }
-
-  _renderImage = () => {
-    return (
-      <View style={{marginVertical: 10, alignItems: 'center', justifyContent: 'center'}}>
-        <Image
-          source={{ uri: this.props.image}}
-          style={{ width: 300, height: 300, resizeMode: 'contain' }}
-        />
-      </View>
-    );
-  };
 }
+
+const styles = StyleSheet.create({
+rotate:{
+  
+}
+
+});

@@ -1,5 +1,10 @@
 {
   "main": "node_modules/expo/AppEntry.js",
+  "rnpm": {
+    "assets": [
+      "./assets/fonts"
+    ]
+  },
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -8,7 +13,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "expo": "^32.0.0",
+    "expo": "^32.0.6",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
     "react-native-fetch-blob": "^0.10.8",
