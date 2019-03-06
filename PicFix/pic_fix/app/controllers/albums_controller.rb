@@ -9,7 +9,7 @@ class AlbumsController < ApplicationController
 
   def show
     begin
-      @album = current_user.albums.find(params[:id])
+      @album = Album.find(params[:id])
       render json: {
                message: "ok",
                album_data: @album,

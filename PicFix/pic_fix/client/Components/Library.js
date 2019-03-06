@@ -1,6 +1,8 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, ListView, ScrollView, FlatList, ListItem } from 'react-native';
+import { StyleSheet, Text, View, Image, ScrollView, Header } from 'react-native';
 import * as RN from 'react-native';
+import { FontAwesome } from '@expo/vector-icons';
+
 
 // home ip: 192.168.1.184
 // school ip: 173.2.3.176
@@ -48,7 +50,7 @@ export default class Library extends React.Component {
             console.log(data.image, "hello");
             return (
 
-              <View key={i} style={styles.albumContainer}>
+                <View key={i} style={styles.albumContainer}>
                     <Image source={{ uri: data.image }} style={styles.photo} />
                 </View>
             );
@@ -60,18 +62,21 @@ export default class Library extends React.Component {
         columns = this.state
         // console.log('line 60 in render', this.state.photoData)
         return (
-            <ScrollView loop={false}
-                index={0}
-                contentContainerStyle={styles.wrapper}>
+            <View style={styles.container}>
+                <ScrollView contentContainerStyle={styles.wrapper}>
 
-                {(this.state.photoApiDataLoaded) ?
-                    <View style={styles.container}>
-                        <Text style={styles.albumname}>{this.state.albumName}</Text>
-                       {this.renderPhotos()}
-                    </View>
-                    : <Text>Loading...</Text>}
+                    {/* <FontAwesome name="navicon" size={40} color="black" style={{ margin: 30, }} /> */}
 
-            </ScrollView>
+
+                    {(this.state.photoApiDataLoaded) ?
+                        <View style={styles.containertwo}>
+                            <Text style={styles.albumname}>{this.state.albumName}</Text>
+                            {this.renderPhotos()}
+                        </View>
+                        : <Text>Loading...</Text>}
+
+                </ScrollView>
+            </View>
         );
     }
 }
@@ -81,12 +86,24 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'row',
         width: 450,
-        height: 600,
+      
         flexWrap: 'wrap',
         backgroundColor: 'white',
         alignItems: 'center',
         justifyContent: 'center',
 
+    },
+    containertwo:{
+            flex: 1,
+            flexDirection: 'row',
+            width: 450,
+           
+            flexWrap: 'wrap',
+            backgroundColor: 'white',
+            alignItems: 'center',
+            justifyContent: 'center',
+    
+       
     },
     albumContainer: {
         flex: 0,
@@ -103,8 +120,8 @@ const styles = StyleSheet.create({
         flexWrap: 'wrap',
         height: 180,
         width: 180,
-        padding:25,
-        margin:10,
+        padding: 25,
+        margin: 10,
         alignItems: 'center',
     },
     albumname: {
@@ -116,7 +133,9 @@ const styles = StyleSheet.create({
     },
     wrapper: {
         alignItems: 'center',
-        width: RN.Dimensions.get("window").width,
-        height: RN.Dimensions.get("window").height,
+        width: RN.Dimensions.get("screen").width,
+        flexGrow: 1,
+        flexDirection: 'row',
+        flexWrap: 'wrap'
     }
 });
