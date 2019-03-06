@@ -100,7 +100,7 @@ export default class EditPhoto extends React.Component {
 
           <Button title='Rotate' onPress={this._rotate90} style={styles.rotate} />
           <Button title='Flip' onPress={this._flip} style={styles.flip} />
-          <Button title='Crop' onPress={this._crop} style={styles.crop} />
+          {/* <Button title='Crop' onPress={this._crop} style={styles.crop} /> */}
           <Button title="Done" onPress={this.finishEdit} />
         </View>
       </View>

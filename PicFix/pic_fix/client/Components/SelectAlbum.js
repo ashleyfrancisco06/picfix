@@ -2,7 +2,8 @@ import React from 'react';
 import { StyleSheet, Text, View, Button, Image, ScrollView } from 'react-native';
 import * as RN from 'react-native';
 
-
+// home ip: 192.168.1.184
+// school ip: 173.2.3.176
 export default class SelectAlbum extends React.Component {
     constructor(props) {
         super(props)
@@ -33,7 +34,7 @@ export default class SelectAlbum extends React.Component {
     fetchPhotos = (req, res) => {
         console.log(this.props)
         albumId = this.props.navigation.getParam('albumId')
-        fetch(`http://173.2.3.176:3000/users/1/albums/${albumId}/photos`)
+        fetch(`http://1173.2.3.176:3000/users/1/albums/${albumId}/photos`)
             .then((res) => res.json())
             .then((data) => {
                 console.log('fetched line 55', data)
