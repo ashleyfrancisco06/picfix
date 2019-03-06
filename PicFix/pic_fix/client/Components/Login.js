@@ -5,6 +5,7 @@ import { Font, LinearGradient } from 'expo';
 
 
 export default class Signup extends React.Component {
+    
     state = {
         fontLoaded: false,
     };

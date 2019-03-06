@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, Image, TouchableOpacity, ListView } from 'react-native';
-import { ImagePicker, Permissions, Asset, ImageManipulator } from 'expo';
+import { StyleSheet, Text, View, Button, Image,  } from 'react-native';
+import { ImagePicker, Permissions, } from 'expo';
 
 
 // https://www.youtube.com/watch?v=IGZCtwpnqC8
@@ -42,12 +42,12 @@ export default class EditOptions extends React.Component {
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
 
 
-        {image && <Image source={{ uri: image }} style={{ width: 200, height: 200 }} />}
-        <View style={styles.listContainer}>
+        {image && <Image source={{ uri: image }} style={{ width: 400, height: 400}} />}
+        
           <Button title="Gallery" onPress={this.selectPicture}>Gallery</Button>
           <Button title="Camera" onPress={this.takePicture}>Camera</Button>
           <Button title="Edit" onPress={() => { this.props.navigation.navigate("EditPhoto", image = { image }) }} />
-        </View>
+      
       </View>
     );
   }

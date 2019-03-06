@@ -5,16 +5,15 @@ import EditPhoto from "./Components/EditPhoto"
 import Albums from "./Components/Albums"
 import Login from "./Components/Login"
 import SelectAlbum from "./Components/SelectAlbum"
-import { createSwitchNavigator, createBottomTabNavigator, createAppContainer, createStackNavigator } from "react-navigation";
+import {createBottomTabNavigator, createAppContainer, createStackNavigator } from "react-navigation";
 
 
-const MainNavigator = createSwitchNavigator({
+const MainNavigator = createStackNavigator({
    Signup,
    Library:createBottomTabNavigator ({
     "Library": Library,
     "Edit": EditOptions,
     "Albums": Albums,
-    
    }),
    EditPhoto,
    Login,
@@ -23,7 +22,7 @@ const MainNavigator = createSwitchNavigator({
   
 },
 {
-  initialRouteName: "Signup"
+  initialRouteName: "Login"
 }
 )
 

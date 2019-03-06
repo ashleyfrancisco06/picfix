@@ -6,9 +6,11 @@ import { FontAwesome } from '@expo/vector-icons';
 
 // home ip: 192.168.1.184
 // school ip: 173.2.3.176
-// ztarbucks ip: 172.31.98.233
-
 export default class Library extends React.Component {
+    static navigationOptions= {
+        header: null
+    }
+
     constructor(props) {
         super(props)
         this.state = {
@@ -38,7 +40,6 @@ export default class Library extends React.Component {
 
             })
             .catch(err => console.log(err))
-
     }
     renderPhotos = () => {
 
@@ -65,9 +66,6 @@ export default class Library extends React.Component {
             <View style={styles.container}>
                 <ScrollView contentContainerStyle={styles.wrapper}>
 
-                    {/* <FontAwesome name="navicon" size={40} color="black" style={{ margin: 30, }} /> */}
-
-
                     {(this.state.photoApiDataLoaded) ?
                         <View style={styles.containertwo}>
                             <Text style={styles.albumname}>{this.state.albumName}</Text>
@@ -86,7 +84,6 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'row',
         width: 450,
-      
         flexWrap: 'wrap',
         backgroundColor: 'white',
         alignItems: 'center',
@@ -97,7 +94,6 @@ const styles = StyleSheet.create({
             flex: 1,
             flexDirection: 'row',
             width: 450,
-           
             flexWrap: 'wrap',
             backgroundColor: 'white',
             alignItems: 'center',
